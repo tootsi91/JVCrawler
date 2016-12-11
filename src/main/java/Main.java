@@ -1,17 +1,6 @@
 import javafx.application.Application;
-import javafx.beans.InvalidationListener;
-import javafx.beans.Observable;
-import javafx.beans.property.ObjectProperty;
-import javafx.beans.property.ReadOnlyObjectProperty;
-import javafx.beans.property.ReadOnlyObjectWrapper;
-import javafx.beans.property.SimpleObjectProperty;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
-import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
-import javafx.event.Event;
 import javafx.event.EventHandler;
-import javafx.event.EventType;
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;
 import javafx.scene.Group;
@@ -21,13 +10,11 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
-import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import org.apache.commons.validator.routines.UrlValidator;
 
 import java.io.IOException;
-import java.io.OutputStream;
 import java.io.PrintStream;
 
 
@@ -54,8 +41,9 @@ public class Main extends Application {
     //GUI
     public void init(Stage primaryStage) {
         Group root = new Group();
-        primaryStage.setScene(new Scene(root, 600, 400));
-        String validatorCss = Main.class.getResource("Validators.css").toExternalForm();
+        Scene scene = new Scene(root, 800, 600);
+        primaryStage.setScene(scene);
+        primaryStage.setResizable(false);
 
         VBox vbox = new VBox();
         TabPane tp = new TabPane();
@@ -103,9 +91,8 @@ public class Main extends Application {
                 String url = textBox.getText();
                 boolean validUrl = new UrlValidator().isValid(url);
 
-                if(validUrl) {
-                    button.setDisable(false);
-                }
+                button.setDisable(!validUrl);
+
                 if (validUrl && ke.getCode().equals(KeyCode.ENTER)) {
                     button.fire();
                 }
@@ -121,15 +108,17 @@ public class Main extends Application {
         // create text area for console output
         TextArea ta = new TextArea();
         ta.setPrefWidth(800);
-        ta.prefHeight(600);
         ta.setWrapText(true);
+
+        ScrollPane scrollPane = new ScrollPane();
+        scrollPane.setContent(ta);
 
         Console console = new Console(ta);
         PrintStream ps = new PrintStream(console);
         System.setOut(ps);
         System.setErr(ps);
 
-        vbox.getChildren().addAll(grid3Caption, ta);
+        vbox.getChildren().addAll(grid3Caption, scrollPane);
 
         root.getChildren().add(vbox);
     }
