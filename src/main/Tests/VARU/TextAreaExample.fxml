@@ -1,0 +1,24 @@
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" disable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+    <children>
+        <VBox fx:id="vbox" layoutX="190.0" layoutY="73.0" prefHeight="250.0" prefWidth="300.0" style="-fx-padding: 10;
+-fx-border-style: solid inside;
+-fx-border-width: 2;
+-fx-border-insets: 5;
+-fx-border-radius: 5;
+-fx-border-color: blue;">
+            <children>
+                <Label fx:id="inputLbl" alignment="CENTER_LEFT" cache="true" cacheHint="SCALE" prefHeight="29.0" prefWidth="206.0" text="Please insert Your Input here:" textAlignment="LEFT" />
+                <TextField fx:id="inputText" prefWidth="167.0" />
+                <Button fx:id="okBtn" alignment="CENTER_RIGHT" contentDisplay="CENTER" mnemonicParsing="false" text="OK" textAlignment="CENTER" />
+                <Label fx:id="outputLbl" text="Your Input:" />
+                <TextArea fx:id="outputText" prefHeight="93.0" prefWidth="221.0" wrapText="true" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
