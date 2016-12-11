@@ -30,6 +30,8 @@ import java.io.PrintStream;
 
 public class Main extends Application {
 
+    private Crawler crawler;
+
     public static void main(String[] args) throws Exception {
 
         launch(args);
@@ -37,24 +39,35 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
+        crawler = new Crawler();
+
         primaryStage.setTitle("Java Web Crawler");
-        TextArea ta = TextAreaBuilder.create().prefWidth(800).prefHeight(600).wrapText(true).build();
-        Console console = new Console(ta);
-        PrintStream ps = new PrintStream(console, true);
-        System.setOut(ps);
-        System.setErr(ps);
+        TextArea ta = new TextArea();
+        ta.setPrefWidth(800);
+        ta.prefHeight(600);
+        ta.setWrapText(true);
+
         Scene app = new Scene(ta);
+
+        System.out.println("-----test");
 
         primaryStage.setScene(app);
         primaryStage.show();
 
-        for (char c : "some text".toCharArray()) {
-            console.write(c);
-        }
-        ps.close();
+        //for (char c : "some text".toCharArray()) {
+          //  console.write(c);
+        //}
+        //ps.close();
 
         init(primaryStage);
         primaryStage.show();
+
+        Console console = new Console(ta);
+        PrintStream ps = new PrintStream(console);
+        System.setOut(ps);
+        System.setErr(ps);
+        System.out.println("-----test");
+        System.out.println("-----test");
     }
 
     //Public void Crawler
@@ -129,44 +142,11 @@ public class Main extends Application {
         button.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                String urls[] = new String[1000];
                 String url = textBox.getText();
-                int i=0,j=0,tmp=0,total=0, MAX = 1000;
-                int start=0, end=0;
-                String webpage = null;
                 try {
-                    webpage = Web.getWeb(url);
+                    crawler.doSearch(url);
                 } catch (Exception e) {
                     e.printStackTrace();
-                }
-                end = webpage.indexOf("<body");
-                for(i=total;i<MAX; i++, total++){
-                    start = webpage.indexOf("http://", end);
-                    if(start == -1){
-                        start = 0;
-                        end = 0;
-                        try{
-                            webpage = Web.getWeb(urls[j++]);
-                        }catch(Exception e){
-                            System.out.println("******************");
-                            System.out.println(urls[j-1]);
-                            System.out.println("Exception caught \n"+e);
-                        }
-
-                        //logic to fetch urls out of body of webpage only
-                        end = webpage.indexOf("<body");
-                        if(end == -1){
-                            end = start = 0;
-                            continue;
-                        }
-                    }
-                    end = webpage.indexOf("\"", start);
-                    tmp = webpage.indexOf("'", start);
-                    if(tmp < end && tmp != -1){
-                        end = tmp;
-                    }
-                    url = webpage.substring(start, end);
-                    urls[i] = url;
                 }
             }});
 

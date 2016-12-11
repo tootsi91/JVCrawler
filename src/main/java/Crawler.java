@@ -2,10 +2,8 @@
 
 public class Crawler {
 
-    public static void main(String[] args) throws Exception{
-
+    public void doSearch(String url) throws Exception {
         String urls[] = new String[1000];
-        String url = "www.neti.ee";
         int i=0,j=0,tmp=0,total=0, MAX = 1000;
         int start=0, end=0;
         String webpage = Web.getWeb(url);
@@ -23,7 +21,7 @@ public class Crawler {
                     System.out.println("Exception caught \n"+e);
                 }
 
-            //logic to fetch urls out of body of webpage only
+                //logic to fetch urls out of body of webpage only
                 end = webpage.indexOf("<body");
                 if(end == -1){
                     end = start = 0;
@@ -40,6 +38,10 @@ public class Crawler {
             System.out.println(urls[i]);
         }
         System.out.println("Total URLS Fetched are " + total);
+    }
+
+    public static void main(String[] args) throws Exception{
+        new Crawler().doSearch("http://www.neti.ee");
     }
 }
 

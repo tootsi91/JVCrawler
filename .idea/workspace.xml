@@ -2,78 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34113db4-9e43-47cf-9194-c6f62252b6dc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_10_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Crawler.java" afterPath="$PROJECT_DIR$/src/main/java/Crawler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/AutoCompleteComboBoxListener.java" afterPath="$PROJECT_DIR$/src/test/AutoCompleteComboBoxListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/ButtonExperiments.java" afterPath="$PROJECT_DIR$/src/test/ButtonExperiments.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/Controller.java" afterPath="$PROJECT_DIR$/src/test/Controller.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/CrawlerExamples/ExampleDiff.java" afterPath="$PROJECT_DIR$/src/test/CrawlerExamples/ExampleDiff.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/CrawlerExamples/NotWorking/Crawler2/Crawlerr.java" afterPath="$PROJECT_DIR$/src/test/CrawlerExamples/NotWorking/Crawler2/Crawlerr.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/CrawlerExamples/NotWorking/TestCrawler.java" afterPath="$PROJECT_DIR$/src/test/CrawlerExamples/NotWorking/TestCrawler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/CrawlerExamples/NotWorking/TestCrawler/Crawler.java" afterPath="$PROJECT_DIR$/src/test/CrawlerExamples/NotWorking/TestCrawler/Crawler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/CrawlerExamples/NotWorking/TestCrawler2.java" afterPath="$PROJECT_DIR$/src/test/CrawlerExamples/NotWorking/TestCrawler2.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/CrawlerExamples/NotWorking/TestCrawler3.java" afterPath="$PROJECT_DIR$/src/test/CrawlerExamples/NotWorking/TestCrawler3.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/CrawlerExamples/NotWorking/TestCrawler5.java" afterPath="$PROJECT_DIR$/src/test/CrawlerExamples/NotWorking/TestCrawler5.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/CrawlerExamples/NotWorking/TestCrawler7.java" afterPath="$PROJECT_DIR$/src/test/CrawlerExamples/NotWorking/TestCrawler7.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/CrawlerExamples/NotWorking/TestCrawler8.java" afterPath="$PROJECT_DIR$/src/test/CrawlerExamples/NotWorking/TestCrawler8.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/CrawlerExamples/SearchCrawler.java" afterPath="$PROJECT_DIR$/src/test/CrawlerExamples/SearchCrawler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/CrawlerExamples/TestCrawler4.java" afterPath="$PROJECT_DIR$/src/test/CrawlerExamples/TestCrawler4.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/CrawlerExamples/WebCrawler.java" afterPath="$PROJECT_DIR$/src/test/CrawlerExamples/WebCrawler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/CrawlerExamples/WebCrawler2.java" afterPath="$PROJECT_DIR$/src/test/CrawlerExamples/WebCrawler2.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/CrawlerExamples/Working/Crawler/TestCrawler6.java" afterPath="$PROJECT_DIR$/src/test/CrawlerExamples/Working/Crawler/TestCrawler6.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/CrawlerExamples/Working/Crawler/Web2.java" afterPath="$PROJECT_DIR$/src/test/CrawlerExamples/Working/Crawler/Web2.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/CrawlerExamples/Working/SearchCrawlerTest.java" afterPath="$PROJECT_DIR$/src/test/CrawlerExamples/Working/SearchCrawlerTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/FileCrawler.java" afterPath="$PROJECT_DIR$/src/test/FileCrawler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/JavaFX/AdvancedStageSample.java" afterPath="$PROJECT_DIR$/src/test/GUIexamples/JavaFX/AdvancedStageSample.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/JavaFX/GridPaneSample.java" afterPath="$PROJECT_DIR$/src/test/GUIexamples/JavaFX/GridPaneSample.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/JavaFX/HBoxSample.java" afterPath="$PROJECT_DIR$/src/test/GUIexamples/JavaFX/HBoxSample.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/JavaFX/ListViewCellFactorySample.java" afterPath="$PROJECT_DIR$/src/test/GUIexamples/JavaFX/ListViewCellFactorySample.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/JavaFX/ProgressBarSample.java" afterPath="$PROJECT_DIR$/src/test/GUIexamples/JavaFX/ProgressBarSample.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/JavaFX/SearchBox.css" afterPath="$PROJECT_DIR$/src/test/GUIexamples/JavaFX/SearchBox.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/JavaFX/SearchBoxSample.java" afterPath="$PROJECT_DIR$/src/test/GUIexamples/JavaFX/SearchBoxSample.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/JavaFX/ServiceSample.java" afterPath="$PROJECT_DIR$/src/test/GUIexamples/JavaFX/ServiceSample.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/JavaFX/StageSample.java" afterPath="$PROJECT_DIR$/src/test/GUIexamples/JavaFX/StageSample.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/JavaFX/TabSample.java" afterPath="$PROJECT_DIR$/src/test/GUIexamples/JavaFX/TabSample.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/JavaFX/TableCellFactorySample.java" afterPath="$PROJECT_DIR$/src/test/GUIexamples/JavaFX/TableCellFactorySample.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/JavaFX/TableSample.java" afterPath="$PROJECT_DIR$/src/test/GUIexamples/JavaFX/TableSample.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/JavaFX/TaskSample.java" afterPath="$PROJECT_DIR$/src/test/GUIexamples/JavaFX/TaskSample.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/JavaFX/TextValidatorSample.java" afterPath="$PROJECT_DIR$/src/test/GUIexamples/JavaFX/TextValidatorSample.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/JavaFX/TextValidatorSampleVARU.java" afterPath="$PROJECT_DIR$/src/test/GUIexamples/JavaFX/TextValidatorSampleVARU.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/JavaFX/Validators.css" afterPath="$PROJECT_DIR$/src/test/GUIexamples/JavaFX/Validators.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/JavaFX/WebViewSample.java" afterPath="$PROJECT_DIR$/src/test/GUIexamples/JavaFX/WebViewSample.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/JavaFX/icon-48x48.png" afterPath="$PROJECT_DIR$/src/test/GUIexamples/JavaFX/icon-48x48.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/JavaFX/search-box.png" afterPath="$PROJECT_DIR$/src/test/GUIexamples/JavaFX/search-box.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/JavaFX/search-clear-over.png" afterPath="$PROJECT_DIR$/src/test/GUIexamples/JavaFX/search-clear-over.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/JavaFX/search-clear.png" afterPath="$PROJECT_DIR$/src/test/GUIexamples/JavaFX/search-clear.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/Lab10.java" afterPath="$PROJECT_DIR$/src/test/GUIexamples/Lab10.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/ObservableListSample.java" afterPath="$PROJECT_DIR$/src/test/GUIexamples/ObservableListSample.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/SimpleCalculator.java" afterPath="$PROJECT_DIR$/src/test/GUIexamples/SimpleCalculator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/TestGUI.java" afterPath="$PROJECT_DIR$/src/test/GUIexamples/TestGUI.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/TestGUI2.java" afterPath="$PROJECT_DIR$/src/test/GUIexamples/TestGUI2.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/TestGUI4.java" afterPath="$PROJECT_DIR$/src/test/GUIexamples/TestGUI4.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/TestGui1.java" afterPath="$PROJECT_DIR$/src/test/GUIexamples/TestGui1.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/GUIexamples/TestGui3.java" afterPath="$PROJECT_DIR$/src/test/GUIexamples/TestGui3.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/JavaFXApplication1.java" afterPath="$PROJECT_DIR$/src/test/JavaFXApplication1.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/SampleController.java" afterPath="$PROJECT_DIR$/src/test/SampleController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/TextCrawler.java" afterPath="$PROJECT_DIR$/src/test/TextCrawler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/VARU/ExtendableSearch.java" afterPath="$PROJECT_DIR$/src/test/VARU/ExtendableSearch.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/VARU/FileCrawlerVaru.java" afterPath="$PROJECT_DIR$/src/test/VARU/FileCrawlerVaru.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/VARU/JavaFXMain.java" afterPath="$PROJECT_DIR$/src/test/VARU/JavaFXMain.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/VARU/MainVARU.java" afterPath="$PROJECT_DIR$/src/test/VARU/MainVARU.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/VARU/SearchCrawlerVARU.java" afterPath="$PROJECT_DIR$/src/test/VARU/SearchCrawlerVARU.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/VARU/TextAreaExample.fxml" afterPath="$PROJECT_DIR$/src/test/VARU/TextAreaExample.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/VARU/TextAreaExample.java" afterPath="$PROJECT_DIR$/src/test/VARU/TextAreaExample.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/VARU/WebCrawlerVARU.java" afterPath="$PROJECT_DIR$/src/test/VARU/WebCrawlerVARU.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/VARU/extendableSearch.fxml" afterPath="$PROJECT_DIR$/src/test/VARU/extendableSearch.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/WebCrawler.java" afterPath="$PROJECT_DIR$/src/test/WebCrawler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Tests/search-box.png" afterPath="$PROJECT_DIR$/src/test/search-box.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Validators.css" afterPath="$PROJECT_DIR$/src/main/resources/Validators.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Web.java" afterPath="$PROJECT_DIR$/src/main/java/Web.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/sample.css" afterPath="$PROJECT_DIR$/src/main/resources/sample.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/sample.fxml" afterPath="$PROJECT_DIR$/src/main/resources/sample.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Crawler.class" afterPath="$PROJECT_DIR$/target/classes/Crawler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Main$1.class" afterPath="$PROJECT_DIR$/target/classes/Main$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Main$2.class" afterPath="$PROJECT_DIR$/target/classes/Main$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Main$Console.class" afterPath="$PROJECT_DIR$/target/classes/Main$Console.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Main$TextInputValidatorPane$1.class" afterPath="$PROJECT_DIR$/target/classes/Main$TextInputValidatorPane$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Main$TextInputValidatorPane$2.class" afterPath="$PROJECT_DIR$/target/classes/Main$TextInputValidatorPane$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Main$TextInputValidatorPane.class" afterPath="$PROJECT_DIR$/target/classes/Main$TextInputValidatorPane.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Main$ValidationEvent.class" afterPath="$PROJECT_DIR$/target/classes/Main$ValidationEvent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Main$ValidationResult$Type.class" afterPath="$PROJECT_DIR$/target/classes/Main$ValidationResult$Type.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Main$ValidationResult.class" afterPath="$PROJECT_DIR$/target/classes/Main$ValidationResult.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Main$ValidatorPane$1.class" afterPath="$PROJECT_DIR$/target/classes/Main$ValidatorPane$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Main$ValidatorPane.class" afterPath="$PROJECT_DIR$/target/classes/Main$ValidatorPane.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Main.class" afterPath="$PROJECT_DIR$/target/classes/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Crawler.java" afterPath="$PROJECT_DIR$/src/main/java/Crawler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
     </list>
     <ignored path="JVCrawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -97,8 +41,8 @@
       <file leaf-file-name="Crawler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Crawler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+            <state relative-caret-position="58">
+              <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -117,12 +61,22 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="360" column="1" selection-start-line="360" selection-start-column="1" selection-end-line="360" selection-end-column="1" />
+            <state relative-caret-position="1568">
+              <caret line="169" column="17" selection-start-line="169" selection-start-column="17" selection-end-line="169" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#6293#6301#0" expanded="true" />
+                <element signature="e#5071#5079#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrintStream.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/io/PrintStream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="149" column="11" selection-start-line="149" selection-start-column="11" selection-end-line="149" selection-end-column="11" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -141,8 +95,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Crawler.java" />
         <option value="$PROJECT_DIR$/src/main/java/Web.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Crawler.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
       </list>
     </option>
@@ -267,6 +221,10 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -312,6 +270,21 @@
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="JVCrawler" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Crawler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Crawler" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -590,12 +563,14 @@
       <listeners />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Crawler" />
     </list>
     <recent_temporary>
-      <list size="1">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Crawler" />
       </list>
     </recent_temporary>
   </component>
@@ -621,11 +596,11 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5021552" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20150863" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298969" sideWeight="0.49784482" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25754312" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -678,21 +653,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sample.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Crawler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        <state relative-caret-position="58">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/io/PrintStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="149" column="11" selection-start-line="149" selection-start-column="11" selection-end-line="149" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/javafx-src.zip!/javafx/scene/control/TextArea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="441" column="11" selection-start-line="441" selection-start-column="11" selection-end-line="441" selection-end-column="11" />
+          <folding>
+            <element signature="e#15908#15909#0" expanded="true" />
+            <element signature="e#15932#15933#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="360" column="1" selection-start-line="360" selection-start-column="1" selection-end-line="360" selection-end-column="1" />
+        <state relative-caret-position="1568">
+          <caret line="169" column="17" selection-start-line="169" selection-start-column="17" selection-end-line="169" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6293#6301#0" expanded="true" />
+            <element signature="e#5071#5079#0" expanded="true" />
           </folding>
         </state>
       </provider>
