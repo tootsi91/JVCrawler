@@ -33,7 +33,6 @@ public class Main extends Application {
     private Crawler crawler;
 
     public static void main(String[] args) throws Exception {
-
         launch(args);
     }
 
@@ -42,54 +41,15 @@ public class Main extends Application {
         crawler = new Crawler();
 
         primaryStage.setTitle("Java Web Crawler");
-        TextArea ta = new TextArea();
-        ta.setPrefWidth(800);
-        ta.prefHeight(600);
-        ta.setWrapText(true);
-
-        Scene app = new Scene(ta);
-
-        System.out.println("-----test");
-
-        primaryStage.setScene(app);
-        primaryStage.show();
-
-        //for (char c : "some text".toCharArray()) {
-          //  console.write(c);
-        //}
-        //ps.close();
 
         init(primaryStage);
         primaryStage.show();
-
-        Console console = new Console(ta);
-        PrintStream ps = new PrintStream(console);
-        System.setOut(ps);
-        System.setErr(ps);
-        System.out.println("-----test");
-        System.out.println("-----test");
-    }
-
-    //Public void Crawler
-
-    public static class Console extends OutputStream {
-
-        private TextArea output;
-
-        public Console(TextArea ta) {
-            this.output = ta;
-        }
-
-        @Override
-        public void write(int i) throws IOException {
-            output.appendText(String.valueOf((char) i));
-        }
     }
 
     //GUI
     public void init(Stage primaryStage) {
         Group root = new Group();
-        primaryStage.setScene(new Scene(root, 350, 600));
+        primaryStage.setScene(new Scene(root, 600, 400));
         String validatorCss = Main.class.getResource("Validators.css").toExternalForm();
 
         VBox vbox = new VBox();
@@ -155,12 +115,21 @@ public class Main extends Application {
 
         Label grid3Caption = new Label("Search results");
         grid3Caption.setWrapText(true);
-        ListView <String> listView = new ListView <String>();
-        listView.setItems(FXCollections.<String>observableArrayList());
-        listView.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
 
+        // create text area for console output
+        TextArea ta = new TextArea();
+        ta.setPrefWidth(800);
+        ta.prefHeight(600);
+        ta.setWrapText(true);
 
-        vbox.getChildren().addAll(grid3Caption, listView);
+        Console console = new Console(ta);
+        PrintStream ps = new PrintStream(console);
+        System.setOut(ps);
+        System.setErr(ps);
+        System.out.println("-----test");
+        System.out.println("-----test");
+
+        vbox.getChildren().addAll(grid3Caption, ta);
 
         pane.getStylesheets().add(validatorCss);
         root.getChildren().add(vbox);
