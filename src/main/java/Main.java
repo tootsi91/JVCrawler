@@ -17,6 +17,8 @@ import javafx.geometry.Insets;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Region;
@@ -31,6 +33,8 @@ import java.io.PrintStream;
 public class Main extends Application {
 
     private Crawler crawler;
+
+    private TextField textBox;
 
     public static void main(String[] args) throws Exception {
         launch(args);
@@ -76,7 +80,7 @@ public class Main extends Application {
         //Text Box
         Label grid2Caption = new Label("Insert the name of the webpage you want to search below:");
         grid2Caption.setWrapText(true);
-        final TextField textBox = new TextField();
+        textBox = new TextField();
 
 
         TextInputValidatorPane <TextField> pane = new TextInputValidatorPane <TextField>();
@@ -99,7 +103,7 @@ public class Main extends Application {
         });
 
         //Button
-        Button button = new Button("Search");
+        final Button button = new Button("Search");
         button.setPrefSize(190, 20);
         button.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -111,6 +115,14 @@ public class Main extends Application {
                     e.printStackTrace();
                 }
             }});
+
+        textBox.setOnKeyReleased(new EventHandler<KeyEvent>() {
+            public void handle(KeyEvent ke) {
+                if (ke.getCode().equals(KeyCode.ENTER)) {
+                    button.fire();
+                }
+            }
+        });
 
         vbox.setPadding(new Insets(12));
         vbox.getChildren().addAll(grid2Caption, pane, button);
@@ -128,8 +140,6 @@ public class Main extends Application {
         PrintStream ps = new PrintStream(console);
         System.setOut(ps);
         System.setErr(ps);
-        System.out.println("-----test");
-        System.out.println("-----test");
 
         vbox.getChildren().addAll(grid3Caption, ta);
 
