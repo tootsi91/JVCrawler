@@ -77,6 +77,8 @@ public class Main extends Application {
         Label grid2Caption = new Label("Insert the name of the webpage you want to search below:");
         grid2Caption.setWrapText(true);
         final TextField textBox = new TextField();
+
+
         TextInputValidatorPane <TextField> pane = new TextInputValidatorPane <TextField>();
         pane.setContent(textBox);
         pane.setValidator(new Validator <TextField>() {

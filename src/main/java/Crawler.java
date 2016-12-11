@@ -3,76 +3,49 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
 public class Crawler {
 
     public void doSearch(String url) throws Exception {
         Document doc = Jsoup.connect(url).get();
         Elements links = doc.select("a[href]");
-        List<String> list = new ArrayList<String>();
+        Elements media = doc.select("[src]");
+        Elements imports = doc.select("link[href]");
 
+        print("\nMedia: (%d)", media.size());
+        for (Element src : media) {
+            if (src.tagName().equals("img"))
+                print(" * %s: <%s> %sx%s (%s)",
+                        src.tagName(), src.attr("abs:src"), src.attr("width"), src.attr("height"),
+                        trim(src.attr("alt"), 20));
+            else
+                print(" * %s: <%s>", src.tagName(), src.attr("abs:src"));
+        }
+
+        print("\nImports: (%d)", imports.size());
+        for (Element link : imports) {
+            print(" * %s <%s> (%s)", link.tagName(), link.attr("abs:href"), link.attr("rel"));
+        }
+
+        print("\nLinks: (%d)", links.size());
         for (Element link : links) {
-            String text = link.attr("abs:href");
-            System.out.println(text);
-            list.add(text);
+            print(" * a: <%s>  (%s)", link.attr("abs:href"), trim(link.text(), 35));
         }
-        /*
-        String urls[] = new String[1000];
 
-
-
-
-        int i=0,j=0,tmp=0,total=0, MAX = 1000;
-        int start=0, end=0;
-        String webpage = Web.getWeb(url);
-        end = webpage.indexOf("<body");
-        for(i=total;i<MAX; i++, total++){
-            start = webpage.indexOf("http://", end);
-            if(start == -1){
-                start = 0;
-                end = 0;
-                try{
-                    webpage = Web.getWeb(urls[j++]);
-                }catch(Exception e){
-                    System.out.println("******************");
-                    System.out.println(urls[j-1]);
-                    System.out.println("Exception caught \n"+e);
-                }
-
-                //logic to fetch urls out of body of webpage only
-                end = webpage.indexOf("<body");
-                if(end == -1){
-                    end = start = 0;
-                    continue;
-                }
-            }
-            end = webpage.indexOf("\"", start);
-            tmp = webpage.indexOf("'", start);
-            if(tmp < end && tmp != -1){
-                end = tmp;
-            }
-            url = webpage.substring(start, end);
-            urls[i] = url;
-            System.out.println(urls[i]);
-        }
-        */
-        System.out.println("Total URLS Fetched are " + list.size());
+        System.out.println("Total URLS Fetched are " + links.size());
     }
 
-    private String loadHtmlFromUrl(String url) {
-        Document doc = null;
-        try {
-            doc = Jsoup.connect("http://example.com/").get();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return doc.outerHtml();
+    private static void print(String msg, Object... args) {
+        System.out.println(String.format(msg, args));
     }
 
-    public static void main(String[] args) throws Exception{
+    private static String trim(String s, int width) {
+        if (s.length() > width)
+            return s.substring(0, width - 1) + ".";
+        else
+            return s;
+    }
+
+    public static void main(String[] args) throws Exception {
         new Crawler().doSearch("http://www.neti.ee");
     }
 }
