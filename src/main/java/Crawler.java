@@ -1,6 +1,4 @@
-package main;
 
-import main.Tests.GUIexamples.JavaFX.TextValidatorSampleVARU;
 
 public class Crawler {
 

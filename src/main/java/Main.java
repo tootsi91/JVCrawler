@@ -1,5 +1,3 @@
-package main;
-
 import javafx.application.Application;
 import javafx.beans.InvalidationListener;
 import javafx.beans.Observable;
@@ -9,20 +7,22 @@ import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.event.EventType;
-import javafx.fxml.FXML;
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.layout.*;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.Region;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import javafx.collections.FXCollections;
-import java.io.Console;
+
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.PrintStream;
@@ -103,7 +103,7 @@ public class Main extends Application {
         //Text Box
         Label grid2Caption = new Label("Insert the name of the webpage you want to search below:");
         grid2Caption.setWrapText(true);
-        TextField textBox = new TextField();
+        final TextField textBox = new TextField();
         TextInputValidatorPane <TextField> pane = new TextInputValidatorPane <TextField>();
         pane.setContent(textBox);
         pane.setValidator(new Validator <TextField>() {
@@ -176,7 +176,7 @@ public class Main extends Application {
         Label grid3Caption = new Label("Search results");
         grid3Caption.setWrapText(true);
         ListView <String> listView = new ListView <String>();
-        listView.setItems(FXCollections.observableArrayList());
+        listView.setItems(FXCollections.<String>observableArrayList());
         listView.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
 
 
